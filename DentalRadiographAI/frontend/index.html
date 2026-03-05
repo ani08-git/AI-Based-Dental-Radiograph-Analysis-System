@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Dental Radiograph Analysis</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>AI-Based Dental Radiograph Analysis System</h1>
+<p>Upload OPG Dental X-ray for Analysis</p>
+</header>
+
+<div class="container">
+
+<div class="upload-section">
+<input type="file" id="imageUpload" accept="image/*">
+</div>
+
+<div class="image-preview">
+<img id="preview" src="" alt="Uploaded X-ray will appear here">
+</div>
+
+<div class="buttons">
+<button onclick="segment()">Segmentation</button>
+<button onclick="toothNumber()">Tooth Numbering</button>
+<button onclick="detectMissing()">Missing Tooth</button>
+<button onclick="classifyImplant()">Implant Classification</button>
+</div>
+
+<div class="results">
+<h3>Analysis Result</h3>
+<p id="resultText">No analysis performed yet.</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
